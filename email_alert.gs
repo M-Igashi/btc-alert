@@ -14,7 +14,6 @@ function send_alert() {
     to: email_address,
     subject: spread_alert,
     body: spread_alert, 
-    name: "てぃな",
     noReply: true    // google appsアカウントを使用する場合にnoReplyアドレスから送信するオプション。通常のGmailアカウントを使用する場合は行ごと削除。
   });
     
