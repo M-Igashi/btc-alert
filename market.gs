@@ -1,3 +1,5 @@
+// 各市場の最終取引価格を取得
+
 var bfdata = UrlFetchApp.fetch('https://api.bitflyer.jp/v1/getticker?product_code=BTC_JPY');
 var bfprice = JSON.parse(bfdata)["ltp"];
 var bf = {'name' : 'bitFlyer', 'price' : bfprice};
@@ -21,8 +23,9 @@ var ccdata = UrlFetchApp.fetch('https://coincheck.com/api/ticker');
 var ccprice = JSON.parse(ccdata)["last"];
 var cc = {'name' : 'coincheck', 'price' : ccprice};
 
-var market = [bf, qn, bb, zf, cc];
+//配列を作成して降順でソート
 
+var market = [bf, qn, bb, zf, cc];
 
 market.sort(function(a,b){
     if(a.price>b.price) return -1;
@@ -30,7 +33,10 @@ market.sort(function(a,b){
     return 0;
 });
 
-//var spread_market = market[0]["name"] +" "+"-"+" "+market[4]["name"]
-//var max_spread = market[0]["price"]-market[4]["price"]
+/* 最高値市場と最安値市場を検出してその市場名と価格差を算出するサンプル。
+var spread_market = market[0]["name"] +" "+"-"+" "+market[4]["name"]
+var max_spread = market[0]["price"]-market[4]["price"]
+*/
 
+// 日付の取得。
 var date = Utilities.formatDate(new Date(), "JST", "dd/MM/YYYY ' ' HH:mm");
