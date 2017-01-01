@@ -7,7 +7,7 @@ In GAS, you need to include [TwitterWebService](https://gist.github.com/M-Igashi
 ## Approach 
 ### market.gs
 This script is a collection of market data.  
-Market tickers: bf = bitFlyer, qn = Quoine, bb = BtcBox, zf = Zaif, cc = coincheck
+Market tickers: bf = bitFlyer, qn = Quoine, bb = BtcBox, zf = Zaif, cc = coincheck  
 Objects: "name" = name of the market, "price" = last traded price in each market e.c. bitFlyer's price is bfprice.  
 A variable "market" is an arrey of tickers sorted descendingly. You can use it for such as ranking and market spread.
 ## secret.gs
