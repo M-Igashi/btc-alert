@@ -2,8 +2,8 @@
 A basic script collection for Japanese bitcoin market. It covers five major markets in Japan and includes price tickers and alert triggers utilized for Google Apps Script platform to encourage programing beginners to make their own script.  
 
 ## Dependencies 
-A Google account is neccessary for Google Apps Script (GAS) implementation. You can create a new project from Google Drive --> New --> Add new application.  
-In GAS, you need to include [TwitterWebService](https://gist.github.com/M-Igashi/750ab08718687d11bff6322b8d6f5d90) library; simply adding `1rgo8rXsxi1DxI_5Xgo_t3irTw1Y5cxl2mGSkbozKsSXf2E_KBBPC3xTF` from Resource --> Library section.  
+A Google account is neccessary for Google Apps Script (GAS) implementation. You can create a new project from Google Drive --> New --> Add new application.    
+In GAS, you need to include [TwitterWebService](https://gist.github.com/M-Igashi/750ab08718687d11bff6322b8d6f5d90) library; simply adding `1rgo8rXsxi1DxI_5Xgo_t3irTw1Y5cxl2mGSkbozKsSXf2E_KBBPC3xTF` from Resource --> Library section.
 ## Approach 
 ### market.gs
 This script is a collection of market data.  
