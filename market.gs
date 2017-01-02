@@ -8,16 +8,13 @@ var qndata = UrlFetchApp.fetch('https://api.quoine.com/products/5');
 var qnprice = JSON.parse(qndata)["last_traded_price"];
 var qn = {'name' : 'Quoine', 'price' : qnprice};
 
-
 var bbdata = UrlFetchApp.fetch('https://www.btcbox.co.jp/api/v1/ticker/');
 var bbprice = JSON.parse(bbdata)["last"];
 var bb = {'name' : 'BtcBox', 'price' : bbprice};
 
-
 var zfdata = UrlFetchApp.fetch('https://api.zaif.jp/api/1/ticker/btc_jpy');
 var zfprice = JSON.parse(zfdata)["last"];
 var zf = {'name' : 'Zaif', 'price' : zfprice};
-
 
 var ccdata = UrlFetchApp.fetch('https://coincheck.com/api/ticker');
 var ccprice = JSON.parse(ccdata)["last"];
@@ -39,4 +36,4 @@ var max_spread = market[0]["price"]-market[4]["price"]
 */
 
 // 日付の取得。
-var date = Utilities.formatDate(new Date(), "JST", "dd/MM/YYYY ' ' HH:mm");
+var date = Utilities.formatDate(new Date(), "JST", "dd/MM/YYYY-HH:mm");
