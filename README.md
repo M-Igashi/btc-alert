@@ -17,4 +17,4 @@ A script for sending email alert. You can set up conditions and contents of the 
 ### twitter_alert.gs
 Twitter authorization procedure and tweet script.  
 ## 説明動画  
-[![](http://img.youtube.com/vi/TR4QS77Tjhw/0.jpg)](https://www.youtube.com/watch?v=TR4QS77Tjhw)
+
