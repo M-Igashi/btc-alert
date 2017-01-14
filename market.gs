@@ -37,3 +37,6 @@ var max_spread = market[0]["price"]-market[4]["price"]
 
 // 日付の取得。
 var date = Utilities.formatDate(new Date(), "JST", "dd/MM/YYYY-HH:mm");
+
+function test(){
+Logger.log(market);}
