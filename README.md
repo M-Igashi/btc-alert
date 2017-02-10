@@ -16,4 +16,5 @@ An empty script file to input Twitter API secrets and email address
 A script for sending email alert. You can set up conditions and contents of the alert by using market.gs tickers.
 ### twitter_alert.gs
 Twitter authorization procedure and tweet script.  
-## 説明動画    [![](http://img.youtube.com/vi/HcyHU0MwcZg/0.jpg)](https://www.youtube.com/watch?v=HcyHU0MwcZg)  
+## 説明動画    
+[![](http://img.youtube.com/vi/HcyHU0MwcZg/0.jpg)](https://www.youtube.com/watch?v=HcyHU0MwcZg)  
