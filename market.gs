@@ -4,6 +4,9 @@ var bfdata = UrlFetchApp.fetch('https://api.bitflyer.jp/v1/getticker?product_cod
 var bfprice = JSON.parse(bfdata)["ltp"];
 var bf = {'name' : 'bitFlyer', 'price' : bfprice};
 
+var fxdata = UrlFetchApp.fetch('https://api.bitflyer.jp/v1/getticker?product_code=FX_BTC_JPY');
+var fxprice = JSON.parse(fxdata)["ltp"];
+
 var qndata = UrlFetchApp.fetch('https://api.quoine.com/products/5');
 var qnprice = JSON.parse(qndata)["last_traded_price"];
 var qn = {'name' : 'Quoine', 'price' : qnprice};
